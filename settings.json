@@ -1,0 +1,18 @@
+{
+  "port": "Surge Generative",
+  "mode": "diatonic",
+  "low": "C3",
+  "high": "C5",
+  "hold": 2.0,
+  "silence": 4.0,
+  "chords": 0,
+  "seed": null,
+  "velocity": 55,
+  "starting_key": "C",
+  "fourth_modulation_probability": 0.15,
+  "seventh_modulation_probability": 0.15,
+  "diatonic_steps": [0, 1, 2],
+  "diatonic_probabilities": [0.1, 0.6, 0.3],
+  "chromatic_steps": [1],
+  "chromatic_probabilities": [1.0]
+}
