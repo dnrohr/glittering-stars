@@ -1,0 +1,8 @@
+A3 C4 F4 key=C major step=0 initial
+A3 C4 E4 key=C major step=1 moved
+G3 C4 E4 key=C major step=1 moved
+G3 C4 D4 key=C major step=1 moved
+G3 Bb3 D4 key=F major step=1 modulated C -> F
+G3 Bb3 D4 key=F major step=0 repeat
+G3 C4 D4 key=F major step=1 moved
+G3 C4 E4 key=F major step=1 moved

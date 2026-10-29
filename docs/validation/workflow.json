@@ -1,0 +1,21 @@
+{
+  "pass_": true,
+  "native_qpa": "windows",
+  "steps": [
+    "Generate12 / live timing and velocity revision during hold",
+    "Select4-7/Loop/replace/Pause/Next/LoopOff/Stop isolated",
+    "Continue child / edit explicit child preserves parent",
+    "Audition / named Save/Open exact and silent",
+    "Stored selection MIDI two passes including final gap parsed equal"
+  ],
+  "history_events": 14,
+  "branches": 3,
+  "midi_notes": [
+    36,
+    38,
+    48,
+    36,
+    38,
+    48
+  ]
+}

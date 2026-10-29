@@ -1,0 +1,15 @@
+test_cleared_selection_cannot_silently_reuse_old_passage (tests.test_gui_acceptance.GUIAcceptance.test_cleared_selection_cannot_silently_reuse_old_passage) ... ok
+test_inspector_survives_phase_updates_and_progress_uses_worker_deadline (tests.test_gui_acceptance.GUIAcceptance.test_inspector_survives_phase_updates_and_progress_uses_worker_deadline) ... ok
+test_invalid_weights_apply_is_atomic_real_button_path (tests.test_gui_acceptance.GUIAcceptance.test_invalid_weights_apply_is_atomic_real_button_path) ... ok
+test_keyboard_selection_loop_play_and_stop_leave_rng_history_unchanged (tests.test_gui_acceptance.GUIAcceptance.test_keyboard_selection_loop_play_and_stop_leave_rng_history_unchanged) ... ok
+test_mouse_drag_selects_contiguous_passage (tests.test_gui_acceptance.GUIAcceptance.test_mouse_drag_selects_contiguous_passage) ... ok
+test_old_worker_view_cannot_rollback_new_selection_gesture (tests.test_gui_acceptance.GUIAcceptance.test_old_worker_view_cannot_rollback_new_selection_gesture) ... ok
+test_policy_locks_and_invalid_weights_during_live_hold (tests.test_gui_acceptance.GUIAcceptance.test_policy_locks_and_invalid_weights_during_live_hold) ... ok
+test_queued_replay_then_immediate_play_keeps_worker_mode (tests.test_gui_acceptance.GUIAcceptance.test_queued_replay_then_immediate_play_keeps_worker_mode) ... ok
+test_shift_selection_survives_new_history_event (tests.test_gui_acceptance.GUIAcceptance.test_shift_selection_survives_new_history_event) ... ok
+test_voice_lanes_follow_ids_after_crossing (tests.test_gui_acceptance.GUIAcceptance.test_voice_lanes_follow_ids_after_crossing) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 6.289s
+
+OK

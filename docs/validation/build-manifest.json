@@ -1,0 +1,29 @@
+{
+  "baseline_revision": "57c3dc177c4dbab06ea3eaed56d565f9dab95302",
+  "working_tree": "uncommitted local implementation; handoff inputs retained",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "sources_sha256": {
+    "desktop.py": "58ae507f413f8d28105ed0c7ce784830a28ba390561533cbc6419582b69439f5",
+    "generate.py": "d4b9be349be91fc3004771ebae91fdb38bd6f75d86d55f55dfcbe4745a641dae",
+    "requirements.txt": "622c203cefafe9852f8e8cb040743eacb9487da176c8f23a590910aadf31d666",
+    "requirements-desktop.txt": "b05212247522deaf51543e4b8516fa55fb3a352b432c6267bb707e3a7979a125",
+    "packaging/GlitteringStars.spec": "4f1ec87e0c67a069f2056953754887e3a721bc6851dca0862dca0b90d4367f32",
+    "glittering_stars/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "glittering_stars/contracts.py": "ea4cef99d377f71c13adf3ea7195ed03134151470d1ad7202357e55115099868",
+    "glittering_stars/domain/__init__.py": "c4875f720c088a6f2b41fd6678dacce16bad924fe389efc2a4edb6eee51f6f2a",
+    "glittering_stars/domain/engine.py": "3f05c8210355356f23189c48a52727f2466d8ad9091e0c2a374102c3e450af87",
+    "glittering_stars/playback/__init__.py": "8ab0c223f4ae5777381b31db7d394d54d00351c11fef0adf318601acbea10581",
+    "glittering_stars/playback/controller.py": "cb3cbeb0ab6fe9758d1b61568e25c69f653871f502fdb4c5d39a3e5f2031dd47",
+    "glittering_stars/sessions/__init__.py": "17d4e2fa215d91ad33c18ef5702050f4e74ac314200c25ff11a7a92c62578df0",
+    "glittering_stars/sessions/midi.py": "1c9d7dd6b72fd87ff716bf6958b63883857bacb4786cc8c36466f50daaa61912",
+    "glittering_stars/sessions/storage.py": "79a579214550a52a2599587df884ef74be69d1a6c3b7f825773958605dcb9b8f"
+  },
+  "executable": "dist/packaged/GlitteringStars/GlitteringStars.exe",
+  "executable_sha256": "efb4ab18978cddae9115c75415537dac8e0001f9eb697955a9bc24bb1a091296",
+  "bundle_files": 254,
+  "bundle_bytes": 131618141,
+  "previous_qualified_executable_sha256": "c52829cf248863bb47ce9197533094718d9f622705a0e6b925f51f8987b5d9da",
+  "latest_change": "Regenerate: fresh seed, clear history/branches, restart with current settings and route",
+  "latest_validation": "regenerate-tests.txt: 94 passed; regenerate-native-gui.txt: 1 passed; packaged launch exit0"
+}

@@ -1,0 +1,2 @@
+# Keep upstream license text verbatim, including its whitespace.
+packaging/licenses/* -whitespace

@@ -1,0 +1,14 @@
+Glittering Stars includes Qt for Python (PySide6 6.12.0), Qt 6, Shiboken 6,
+mido 1.3.3, python-rtmidi 1.5.8 / RtMidi, PyInstaller 6.22.3, and the CPython
+3.12 runtime. Full license texts are in the adjacent `licenses` directory.
+
+Qt for Python and Qt are used under the LGPLv3 option. See `licenses/LGPL-3.0.txt`
+for the complete license text and https://www.qt.io/development/open-source-lgpl-obligations
+for Qt's distribution guidance. The included `Qt-Commercial-Alternative.txt`
+describes a separate commercial option; this application does not use it.
+
+mido and python-rtmidi/RtMidi use MIT-style licenses. Their complete installed
+notices are `licenses/Mido-MIT.txt` and `licenses/python-rtmidi-MIT.txt`.
+PyInstaller's complete license, bootloader exception and notices are in
+`licenses/PyInstaller-COPYING.txt`. The bundled CPython runtime license is in
+`licenses/Python-PSF-License.txt`.

@@ -1,0 +1,17 @@
+{
+  "events": 10000,
+  "generation_seconds": 1.8441451000981033,
+  "render_scroll_seconds": 0.029036900028586388,
+  "save_seconds": 2.219139900058508,
+  "load_seconds": 2.419211600208655,
+  "file_bytes": 80222662,
+  "qt_event_pumps": 14,
+  "completed_chords": 33,
+  "max_hold_error_ms": 14.509899979457257,
+  "rng_unchanged": true,
+  "history_unchanged": true,
+  "selection_retained": true,
+  "restored_events": 10000,
+  "native_qpa": "windows",
+  "pass": true
+}

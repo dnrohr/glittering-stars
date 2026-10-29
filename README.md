@@ -2,6 +2,35 @@
 
 Generative three-note MIDI chord walks for Surge XT.
 
+## Desktop application
+
+The native Windows desktop adds live controls, a selectable chord timeline, exact selection looping, composition branches, sessions and modulation policies. Install desktop dependencies and launch it separately from the CLI:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt -r requirements-desktop.txt
+.\.venv\Scripts\python.exe desktop.py
+```
+
+Or double-click **Desktop.cmd**. Connect the MIDI output explicitly, or use Preview without a synth. Select a contiguous passage, choose Loop Selection (Ctrl+L), and Play to hear its stored notes and full gaps. Stop preserves synth tails; Panic silences immediately. Existing settings.json is read without rewriting it.
+
+Use **Regenerate (clear history)** to reseed and start fresh. It clears the old timeline, branches and selection, preserves your current controls/connection, and starts a new sequence. **Generate** continues the existing history.
+
+See the [desktop guide](docs/user-guide.md), [session format](docs/session-format.md), [architecture](docs/architecture.md), and [acceptance evidence](docs/validation/ACCEPTANCE.md). Contract documents:
+
+- [Application specification](SPECIFICATION.md)
+- [Roadmap and milestone index](ROADMAP.md)
+- [Fresh orchestrator implementation task](ORCHESTRATOR_HANDOFF.md)
+
+Actual pass/fail/unverified results are under docs/validation. Optional M7 audio-tail capture and Surprise remain outside this build.
+
+Run all CLI, domain, controller, session and Qt checks with:
+
+```powershell
+.\.venv\Scripts\python.exe -m unittest discover -v
+```
+
+Build with `powershell -File packaging/build_windows.ps1`; distribute the entire generated application folder, including `_internal` and dependency licenses. The packaged app does not need the repo `.venv`. See [packaging instructions](packaging/README.md).
+
 ## Install from this repository
 
 On Windows, install Python 3.12 or newer, Surge XT, and loopMIDI. Create a loopMIDI port named **Surge Generative** and enable it in Surge's MIDI settings. In PowerShell, from this repository folder:

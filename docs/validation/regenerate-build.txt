@@ -1,0 +1,115 @@
+201 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.9
+201 INFO: Python: 3.12.10
+239 INFO: Platform: Windows-11-10.0.26200-SP0
+239 INFO: Python environment: C:\Users\dnroh\Documents\glittering-stars\.venv
+245 INFO: Removing temporary files and cleaning cache in C:\Users\dnroh\AppData\Local\pyinstaller
+1439 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\dnroh\\Documents\\glittering-stars',
+ 'C:\\Users\\dnroh\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip',
+ 'C:\\Users\\dnroh\\AppData\\Local\\Programs\\Python\\Python312\\DLLs',
+ 'C:\\Users\\dnroh\\AppData\\Local\\Programs\\Python\\Python312\\Lib',
+ 'C:\\Users\\dnroh\\AppData\\Local\\Programs\\Python\\Python312',
+ 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv',
+ 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages',
+ 'C:\\Users\\dnroh\\Documents\\glittering-stars']
+1810 INFO: Appending 'datas' from .spec
+1812 INFO: checking Analysis
+1812 INFO: Building Analysis because Analysis-00.toc is non existent
+1812 INFO: Looking for Python shared library...
+1812 INFO: Using Python shared library: C:\Users\dnroh\AppData\Local\Programs\Python\Python312\python312.dll
+1812 INFO: Running Analysis Analysis-00.toc
+1812 INFO: Target bytecode optimization level: 0
+1812 INFO: Initializing module dependency graph...
+1814 INFO: Initializing module graph hook caches...
+1826 INFO: Analyzing modules for base_library.zip ...
+3182 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+3247 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+4536 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+4712 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+5804 INFO: Caching module dependency graph...
+5829 INFO: Analyzing C:\Users\dnroh\Documents\glittering-stars\desktop.py
+5929 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+6044 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+6205 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+6314 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+6316 INFO: SetuptoolsInfo: initializing cached setuptools info...
+7048 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7051 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7052 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+7055 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7085 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7089 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7149 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7154 INFO: Processing pre-safe-import-module hook 'hook-jaraco.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7155 INFO: Setuptools: 'jaraco' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco'!
+7163 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7164 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+7253 INFO: Processing standard module hook 'hook-_osx_support.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7427 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7429 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7560 INFO: Processing pre-safe-import-module hook 'hook-backports.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7561 INFO: Setuptools: 'backports' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.backports'!
+7953 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+7954 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+8388 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8391 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+8433 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+8453 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+8453 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+8472 INFO: Processing standard module hook 'hook-PySide6.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+8685 INFO: Processing standard module hook 'hook-shiboken6.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+8799 INFO: Processing standard module hook 'hook-PySide6.QtNetwork.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+11155 INFO: Processing standard module hook 'hook-PySide6.QtCore.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+14392 INFO: Processing standard module hook 'hook-PySide6.QtGui.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+28716 INFO: Processing standard module hook 'hook-PySide6.QtWidgets.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+31394 INFO: Analyzing hidden import 'mido.backends.pygame'
+31398 INFO: Analyzing hidden import 'rtmidi.midiconstants'
+31401 INFO: Analyzing hidden import 'rtmidi.midiutil'
+31404 INFO: Analyzing hidden import 'mido.backends.rtmidi'
+31410 INFO: Analyzing hidden import 'mido.backends.amidi'
+31412 INFO: Analyzing hidden import 'mido.backends.portmidi'
+31438 INFO: Analyzing hidden import 'mido.backends.rtmidi_python'
+31442 INFO: Processing module hooks (post-graph stage)...
+31635 INFO: Processing standard module hook 'hook-webbrowser.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+31695 INFO: Performing binary vs. data reclassification (152 entries)
+31718 INFO: Looking for ctypes DLLs
+31731 INFO: Analyzing run-time hooks ...
+31732 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+31734 INFO: Including run-time hook 'pyi_rth_pyside6.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+31736 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+31738 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+31740 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+31741 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+31743 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+31751 INFO: Creating base_library.zip...
+31765 INFO: Looking for dynamic libraries
+32386 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\shiboken6']
+32386 INFO: Extra DLL search directories (PATH): ['C:\\Users\\dnroh\\Documents\\glittering-stars\\.venv\\Lib\\site-packages\\PySide6']
+33414 INFO: Warnings written to C:\Users\dnroh\Documents\glittering-stars\build\packaged-work\GlitteringStars\warn-GlitteringStars.txt
+33440 INFO: Graph cross-reference written to C:\Users\dnroh\Documents\glittering-stars\build\packaged-work\GlitteringStars\xref-GlitteringStars.html
+33464 INFO: checking PYZ
+33464 INFO: Building PYZ because PYZ-00.toc is non existent
+33464 INFO: Building PYZ (ZlibArchive) C:\Users\dnroh\Documents\glittering-stars\build\packaged-work\GlitteringStars\PYZ-00.pyz
+33757 INFO: Building PYZ (ZlibArchive) C:\Users\dnroh\Documents\glittering-stars\build\packaged-work\GlitteringStars\PYZ-00.pyz completed successfully.
+33766 INFO: checking PKG
+33766 INFO: Building PKG because PKG-00.toc is non existent
+33766 INFO: Building PKG (CArchive) GlitteringStars.pkg
+33825 INFO: Building PKG (CArchive) GlitteringStars.pkg completed successfully.
+33826 INFO: Bootloader C:\Users\dnroh\Documents\glittering-stars\.venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+33826 INFO: checking EXE
+33826 INFO: Building EXE because EXE-00.toc is non existent
+33826 INFO: Building EXE from EXE-00.toc
+33826 INFO: Copying bootloader EXE to C:\Users\dnroh\Documents\glittering-stars\build\packaged-work\GlitteringStars\GlitteringStars.exe
+33953 INFO: Copying icon to EXE
+34029 INFO: Copying 0 resources to EXE
+34029 INFO: Embedding manifest in EXE
+34109 INFO: Appending PKG archive to EXE
+34270 INFO: Fixing EXE headers
+34752 INFO: Building EXE from EXE-00.toc completed successfully.
+34756 INFO: checking COLLECT
+34756 INFO: Building COLLECT because COLLECT-00.toc is non existent
+34756 INFO: Removing dir C:\Users\dnroh\Documents\glittering-stars\dist\packaged\GlitteringStars
+34800 INFO: Building COLLECT COLLECT-00.toc
+35299 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+35303 INFO: Build complete! The results are available in: C:\Users\dnroh\Documents\glittering-stars\dist\packaged
+Built: C:\Users\dnroh\Documents\glittering-stars\dist\packaged\GlitteringStars\GlitteringStars.exe

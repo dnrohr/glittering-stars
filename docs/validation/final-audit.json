@@ -1,0 +1,19 @@
+{
+  "required_ids": 19,
+  "passed_gates": 49,
+  "full_suite": "90/90",
+  "native_gui": "10/10",
+  "final_midi": "PASS",
+  "packaged_external_exit": 0,
+  "source_hashes_match": true,
+  "executable_hashes_match": true,
+  "optional_M7": "not started",
+  "follow_up": {
+    "feature": "Regenerate (clear history)",
+    "tests": "94/94",
+    "native_gui": "PASS",
+    "packaged_launch_exit": 0,
+    "executable_sha256": "efb4ab18978cddae9115c75415537dac8e0001f9eb697955a9bc24bb1a091296",
+    "evidence": "REGENERATE_RESULTS.md"
+  }
+}

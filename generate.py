@@ -99,20 +99,43 @@ def valid_chord(chord):
 
 
 class ChordWalk:
+    """Compatibility facade over the shared stable-voice desktop engine.
+
+    Legacy callers see sorted pitches; only explicit legacy chord assignment
+    reassigns initial IDs. Normal generation always retains engine voice IDs.
+    """
     def __init__(self, settings):
+        from dataclasses import asdict
+        from glittering_stars.domain import Config, Engine
         settings.validate()
         self.settings = settings
-        self.rng = random.Random(settings.seed)
-        self.tonic = key_number(settings.starting_key)
+        self.engine = Engine(Config.from_dict(asdict(settings)))
         self.refresh_scale()
-        initial = [c for c in itertools.combinations(self.pool, 3) if valid_chord(c)]
-        if not initial:
-            raise ValueError("Range contains no legal three-note chord spanning more than a tritone")
-        self.chord = self.rng.choice(initial)
+
+    @property
+    def rng(self):
+        return self.engine._rng
+
+    @property
+    def tonic(self):
+        return self.engine.key
+
+    @tonic.setter
+    def tonic(self, value):
+        self.engine.key = value
 
     @property
     def key(self):
         return KEY_NAMES[self.tonic]
+
+    @property
+    def chord(self):
+        return tuple(sorted(v.pitch for v in self.engine.voices))
+
+    @chord.setter
+    def chord(self, pitches):
+        from glittering_stars.domain import Voice
+        self.engine.voices = tuple(Voice(i, p) for i, p in enumerate(pitches))
 
     def refresh_scale(self):
         self.pool = [n for n in range(note_number(self.settings.low), note_number(self.settings.high) + 1)
@@ -120,61 +143,38 @@ class ChordWalk:
         self.indices = {n: i for i, n in enumerate(self.pool)}
 
     def candidates(self, step):
-        """Legal voice/direction pairs, keeping the sampled step size fixed."""
-        result = []
-        for voice, note in enumerate(self.chord):
-            for direction in (-1, 1):
-                # Retained out-of-key notes enter the current scale on their next
-                # move: the nearest scale note in the chosen direction is step 1.
-                targets = [n for n in self.pool if (n - note) * direction > 0]
-                if direction < 0:
-                    targets.reverse()
-                if 0 < step <= len(targets):
-                    chord = list(self.chord)
-                    chord[voice] = targets[step - 1]
-                    if valid_chord(chord):
-                        result.append(tuple(sorted(chord)))
-        return result
+        return [tuple(sorted(v.pitch for v in pair[3])) for pair in self.engine._candidate_pairs(step)]
 
     def maybe_modulate(self, previous, chord):
-        if self.settings.mode != 'diatonic':
+        # This compatibility-only method matches legacy sorted tuples onto IDs;
+        # the engine's actual transition path uses stable voice identity directly.
+        from glittering_stars.domain import Voice
+        old = tuple(Voice(i, p) for i, p in enumerate(previous))
+        changed = set(chord) - set(previous)
+        if not changed:
             return chord, 'moved'
-        landed = next(iter(set(chord) - set(previous)))
-        degree = (landed - self.tonic) % 12
-        if degree == 5:
-            alteration, shift, probability = 1, 7, self.settings.fourth_modulation_probability
-        elif degree == 11:
-            alteration, shift, probability = -1, -7, self.settings.seventh_modulation_probability
-        else:
-            return chord, 'moved'
-        if probability == 0 or self.rng.random() >= probability:
-            return chord, 'moved'
-        # A key change alters this pitch class in every octave of the chord.
-        replacement = tuple(sorted(n + alteration if n % 12 == landed % 12 else n for n in chord))
-        # A rejected modulation keeps the ordinary move and the original key.
-        if (not all(note_number(self.settings.low) <= n <= note_number(self.settings.high) for n in replacement)
-                or not valid_chord(replacement)
-                or landed + alteration in set(previous) - set(chord)):
-            return chord, 'moved; modulation blocked by chord/range constraints'
-        old_key = self.key
-        self.tonic = (self.tonic + shift) % 12
+        landed = next(iter(changed))
+        moving = next(v.id for v in old if v.pitch not in chord)
+        candidate = tuple(Voice(v.id, landed if v.id == moving else v.pitch) for v in old)
+        before_key = self.key
+        adjusted, attempted, accepted, reason, _ = self.engine._try_modulation(old, candidate, moving, 0)
         self.refresh_scale()
-        return replacement, f'modulated {old_key} -> {self.key} ({"fourth raised" if degree == 5 else "seventh lowered"})'
+        if accepted:
+            return tuple(sorted(v.pitch for v in adjusted)), f'modulated {before_key} -> {self.key}'
+        return chord, ('moved; ' + reason if attempted and 'blocked' in reason else 'moved')
 
     def advance(self):
-        cfg = self.settings
-        weights = getattr(cfg, cfg.mode + "_probabilities")
-        # Scaling preserves ratios and prevents overflow when adding large weights.
-        scale = max(weights)
-        step = self.rng.choices(getattr(cfg, cfg.mode + "_steps"),
-                                weights=[w / scale for w in weights], k=1)[0]
-        if step == 0:
-            return self.chord, step, "repeat"
-        candidates = self.candidates(step)
-        if not candidates:
-            return self.chord, step, "blocked: no legal move for this step; repeated"
-        self.chord, status = self.maybe_modulate(self.chord, self.rng.choice(candidates))
-        return self.chord, step, status
+        before_key = self.key
+        decision = self.engine.advance()
+        self.refresh_scale()
+        status = decision['status']
+        if status == 'blocked':
+            status = 'blocked: ' + decision['reason'] + '; repeated'
+        elif status == 'modulated':
+            status = f'modulated {before_key} -> {self.key}'
+        elif decision['modulation_attempt'] and 'blocked' in decision['reason']:
+            status = 'moved; ' + decision['reason']
+        return self.chord, decision['step'], status
 
 
 def chord_stream(walk):

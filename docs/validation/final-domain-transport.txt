@@ -1,0 +1,34 @@
+test_allowed_keys_and_cooldown_and_manual_key (tests.test_domain.EngineTests.test_allowed_keys_and_cooldown_and_manual_key) ... ok
+test_apply_config_rejects_without_mutating_engine (tests.test_domain.EngineTests.test_apply_config_rejects_without_mutating_engine) ... ok
+test_bad_config_and_rng_snapshots_rejected_without_mutation (tests.test_domain.EngineTests.test_bad_config_and_rng_snapshots_rejected_without_mutation) ... ok
+test_chord_constraints_and_voice_identity_survive_crossing_and_restore (tests.test_domain.EngineTests.test_chord_constraints_and_voice_identity_survive_crossing_and_restore) ... ok
+test_initial_and_step_zero_do_not_modulate (tests.test_domain.EngineTests.test_initial_and_step_zero_do_not_modulate) ... ok
+test_large_relative_weights_and_negative_seed_roundtrip (tests.test_domain.EngineTests.test_large_relative_weights_and_negative_seed_roundtrip) ... ok
+test_locked_voices_are_immobile_and_modulation_vetoes_octaves_atomically (tests.test_domain.EngineTests.test_locked_voices_are_immobile_and_modulation_vetoes_octaves_atomically) ... ok
+test_pivot_changes_context_without_pitch_changes (tests.test_domain.EngineTests.test_pivot_changes_context_without_pitch_changes) ... ok
+test_snapshot_restore_reproduces_one_hundred_transitions (tests.test_domain.EngineTests.test_snapshot_restore_reproduces_one_hundred_transitions) ... ok
+test_whole_chord_fit_rejects_destination_with_foreign_pitch (tests.test_domain.EngineTests.test_whole_chord_fit_rejects_destination_with_foreign_pitch) ... ok
+test_all_keys_policies_and_constraint_walks (tests.test_harmony_acceptance.HarmonyAcceptance.test_all_keys_policies_and_constraint_walks) ... ok
+test_c_natural_belongs_to_g_major_spec_example_correction (tests.test_harmony_acceptance.HarmonyAcceptance.test_c_natural_belongs_to_g_major_spec_example_correction) ... ok
+test_direction_extremes_and_all_locked_do_not_fallback (tests.test_harmony_acceptance.HarmonyAcceptance.test_direction_extremes_and_all_locked_do_not_fallback) ... ok
+test_pivot_one_choice_one_roll_no_opposite_retry (tests.test_harmony_acceptance.HarmonyAcceptance.test_pivot_one_choice_one_roll_no_opposite_retry) ... ok
+test_audition_isolated_from_history_rng_and_previous_mode (tests.test_playback.PlaybackTests.test_audition_isolated_from_history_rng_and_previous_mode) ... ok
+test_branch_switch_restores_terminal_snapshot_without_deleting_events (tests.test_playback.PlaybackTests.test_branch_switch_restores_terminal_snapshot_without_deleting_events) ... ok
+test_finite_run_stops_after_final_full_gap (tests.test_playback.PlaybackTests.test_finite_run_stops_after_final_full_gap) ... ok
+test_generation_pause_next_stop_and_panic_cleanup (tests.test_playback.PlaybackTests.test_generation_pause_next_stop_and_panic_cleanup) ... ok
+test_impossible_new_phrase_is_transactional (tests.test_playback.PlaybackTests.test_impossible_new_phrase_is_transactional) ... ok
+test_invalid_config_is_rejected_without_pending_revision (tests.test_playback.PlaybackTests.test_invalid_config_is_rejected_without_pending_revision) ... ok
+test_invalid_draft_does_not_interrupt_existing_event (tests.test_playback.PlaybackTests.test_invalid_draft_does_not_interrupt_existing_event) ... ok
+test_invalid_or_noncontiguous_selection_leaves_loop_unchanged (tests.test_playback.PlaybackTests.test_invalid_or_noncontiguous_selection_leaves_loop_unchanged) ... ok
+test_late_hold_does_not_shorten_full_gap_and_stop_interrupts (tests.test_playback.PlaybackTests.test_late_hold_does_not_shorten_full_gap_and_stop_interrupts) ... ok
+test_loop_freezes_events_and_never_advances_generator (tests.test_playback.PlaybackTests.test_loop_freezes_events_and_never_advances_generator) ... ok
+test_selection_replacement_during_gap_restarts_at_first_new_event (tests.test_playback.PlaybackTests.test_selection_replacement_during_gap_restarts_at_first_new_event) ... ok
+test_session_load_detaches_real_midi_sink (tests.test_playback.PlaybackTests.test_session_load_detaches_real_midi_sink) ... ok
+test_set_key_is_queued_until_generation_resumes (tests.test_playback.PlaybackTests.test_set_key_is_queued_until_generation_resumes) ... ok
+test_timing_override_does_not_rewrite_history (tests.test_playback.PlaybackTests.test_timing_override_does_not_rewrite_history) ... ok
+test_worker_acknowledges_commands_and_closes_cleanly (tests.test_playback.PlaybackTests.test_worker_acknowledges_commands_and_closes_cleanly) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.894s
+
+OK

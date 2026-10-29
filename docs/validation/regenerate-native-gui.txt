@@ -1,0 +1,6 @@
+test_regenerate_button_clears_timeline_and_displays_fresh_seed (tests.test_gui_acceptance.GUIAcceptance.test_regenerate_button_clears_timeline_and_displays_fresh_seed) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.786s
+
+OK

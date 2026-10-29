@@ -1,0 +1,3 @@
+# Windows desktop runtime and repeatable packaging toolchain (M1 spike).
+PySide6==6.12.0
+PyInstaller==6.22.3
